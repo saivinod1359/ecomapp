@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Card, CardTitle, CardText, CardBody, CardSubtitle, Button } from "reactstrap";
-import { utcDate } from "../untils/utcTimeZone";
+import { calcPercentage } from "../untils/percentage";
 
-const FnHoc = (MyComponent_1, MyComponent_2, MyComponent_3) => {
+const Offers = (MyComponent_1, MyComponent_2, MyComponent_3) => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
 
     useEffect(() => {
-        fetch("./responses/productsList.json")
+        fetch("./responses/offers.json")
             .then((res) => res.json())
             .then((response) => {
                 console.log(response)
@@ -40,7 +40,7 @@ const FnHoc = (MyComponent_1, MyComponent_2, MyComponent_3) => {
     return () => {
         return <div>
             <div>
-                <strong>{utcDate}</strong> Your Shopping Cart: {
+                Your Shopping Cart: {
                     cart
                     && cart.map((r) => <span style={{ display: "inline-block", padding: '5px' }}>
                         {r.name}
@@ -48,8 +48,8 @@ const FnHoc = (MyComponent_1, MyComponent_2, MyComponent_3) => {
             </div>
 
             <div style={{ display: "flex", flexWrap: "wrap" }}>
-
                 {products.length && products.map((item) => {
+
                     return <Card
                         style={{
                             width: '18rem',
@@ -66,7 +66,8 @@ const FnHoc = (MyComponent_1, MyComponent_2, MyComponent_3) => {
                                 className="mb-2 text-muted"
                                 tag="h6"
                             >
-                                {item.price} INR
+                                <p><s>{item.price} INR</s></p>
+                                <p>{ calcPercentage(item.price, item.offerPercent)} INR</p>
                             </CardSubtitle>
                             <CardText>
                                 <MyComponent_1 msg={item.des} />
@@ -82,4 +83,4 @@ const FnHoc = (MyComponent_1, MyComponent_2, MyComponent_3) => {
     }
 }
 
-export default FnHoc;
+export default Offers;

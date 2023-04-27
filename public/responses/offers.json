@@ -1,0 +1,50 @@
+[{
+    "name": "Samsung Mobile Galaxy",
+    "id": "001",
+    "price": "18000",
+    "offerPercent": "15",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequuntur harum necessitatibus, sequi unde inventore magnam repellendus dolor soluta voluptates eius et omnis natus, iusto, fuga eos asperiores qui sint!",
+    "pic": "https://www.apple.com/v/iphone-12/k/images/meta/iphone-12_specs__uks7xn3l3yqa_og.png?202303230955"
+},{
+    "name": "RedMi Dual",
+    "id": "002",
+    "price": "8000",
+    "offerPercent": "10",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequuntur harum necessitatibus, sequi unde inventore magnam repellendus dolor soluta voluptates eius et omnis natus, iusto, fuga eos asperiores qui sint!",
+    "pic": "https://www.apple.com/v/iphone-12/k/images/meta/iphone-12_specs__uks7xn3l3yqa_og.png?202303230955"
+},{
+    "name": "Real Me",
+    "id": "003",
+    "price": "10000",
+    "offerPercent": "5",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequuntur harum necessitatibus, sequi unde inventore magnam repellendus dolor soluta voluptates eius et omnis natus, iusto, fuga eos asperiores qui sint!",
+    "pic": "https://www.apple.com/v/iphone-12/k/images/meta/iphone-12_specs__uks7xn3l3yqa_og.png?202303230955"
+},{
+    "name": "Apple",
+    "id": "004",
+    "price": "86000",
+    "offerPercent": "8",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequuntur harum necessitatibus, sequi unde inventore magnam repellendus dolor soluta voluptates eius et omnis natus, iusto, fuga eos asperiores qui sint!",
+    "pic": "https://www.apple.com/v/iphone-12/k/images/meta/iphone-12_specs__uks7xn3l3yqa_og.png?202303230955"
+},{
+    "name": "One Plus",
+    "id": "005",
+    "price": "45000",
+    "offerPercent": "5",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequuntur harum necessitatibus, sequi unde inventore magnam repellendus dolor soluta voluptates eius et omnis natus, iusto, fuga eos asperiores qui sint!",
+    "pic": "https://www.apple.com/v/iphone-12/k/images/meta/iphone-12_specs__uks7xn3l3yqa_og.png?202303230955"
+},{
+    "name": "Apple",
+    "id": "004",
+    "price": "86000",
+    "offerPercent": "6",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequuntur harum necessitatibus, sequi unde inventore magnam repellendus dolor soluta voluptates eius et omnis natus, iusto, fuga eos asperiores qui sint!",
+    "pic": "https://www.apple.com/v/iphone-12/k/images/meta/iphone-12_specs__uks7xn3l3yqa_og.png?202303230955"
+},{
+    "name": "One Plus",
+    "id": "005",
+    "price": "45000",
+    "offerPercent": "4",
+    "des": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequuntur harum necessitatibus, sequi unde inventore magnam repellendus dolor soluta voluptates eius et omnis natus, iusto, fuga eos asperiores qui sint!",
+    "pic": "https://www.apple.com/v/iphone-12/k/images/meta/iphone-12_specs__uks7xn3l3yqa_og.png?202303230955"
+}]

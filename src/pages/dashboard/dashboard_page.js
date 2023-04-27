@@ -3,6 +3,16 @@ import Login from '../../components/login_form';
 import { Table, Button, Modal, ModalHeader, ModalBody, ModalFooter, Tooltip } from 'reactstrap';
 import ErrorBoundary from '../../hoc/errorBoundaries';
 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
+import shop_1 from "../../assests/shop_1.jpg";
+import shop_2 from "../../assests/shop_2.jpg";
+import shop_3 from "../../assests/shop_3.jpg";
+
+import "./dashboard_page.css"
+
+
 const DashboardPage = () => {
     const [tableData, setTableData] = useState([])
     const [modal, setModal] = useState(false);
@@ -22,6 +32,20 @@ const DashboardPage = () => {
 
     return <>
         <h1> Dashboard </h1>
+        <Carousel>
+            <div className="carousel_block">
+                <img src={shop_1} />
+                <p className="legend">Legend 1</p>
+            </div>
+            <div className="carousel_block">
+                <img src={shop_2} />
+                <p className="legend">Legend 2</p>
+            </div>
+            <div className="carousel_block">
+                <img src={shop_3} />
+                <p className="legend">Legend 3</p>
+            </div>
+        </Carousel>
         <Table striped>
             <thead>
                 <tr>
@@ -56,7 +80,7 @@ const DashboardPage = () => {
                                     toggle={toolTipToggle}
                                     placement="right"
                                 >
-                                   <img src={item.pic} width="100" height="100" />
+                                    <img src={item.pic} width="100" height="100" />
                                 </Tooltip>
                                 <a
                                     href="javascript:void(0)"

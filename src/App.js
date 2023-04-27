@@ -1,19 +1,28 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import { routes } from './configs/routes/routes_config';
+
 import './App.css';
-import DashboardPage from './pages/dashboard/dashboard_page';
-import Header from './components/common/header';
-import Menu from './components/common/menu';
-import Image from './components/common/image';
-import FnHoc from './hoc/fnHoc';
 
 function App() {
-  const myNumber =  FnHoc(Menu, Header, Image);
-  // console.log('myNumber: ', myNumber())
-
   return (
     <div className="container">
-      <DashboardPage />
-      { myNumber() }
+      <BrowserRouter>
+        <Link to="/"> Home </Link>
+        <Link to="/products"> Products </Link>
+        <Link to="/offers"> Offers </Link>
+
+        <Routes>
+          {
+            routes && routes.map((item) => {
+              return <Route path={item.path} element={<item.component />} />
+            })
+          }
+        </Routes>
+      </BrowserRouter>
+
+      {/* <DashboardPage /> */}
+      {/* { myNumber() } */}
     </div>
   );
 }

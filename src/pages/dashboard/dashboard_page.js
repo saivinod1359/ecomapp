@@ -10,8 +10,7 @@ import shop_1 from "../../assests/shop_1.jpg";
 import shop_2 from "../../assests/shop_2.jpg";
 import shop_3 from "../../assests/shop_3.jpg";
 
-import "./dashboard_page.css"
-
+import "./dashboard_page.css";
 
 const DashboardPage = () => {
     const [tableData, setTableData] = useState([])
@@ -25,13 +24,13 @@ const DashboardPage = () => {
         fetch('./responses/productsList.json')
             .then((res) => res.json())
             .then((data) => {
-                console.log(data);
                 setTableData(data)
             })
     }, []);
 
     return <>
         <h1> Dashboard </h1>
+        <h3>Welcome</h3>
         <Carousel>
             <div className="carousel_block">
                 <img src={shop_1} />

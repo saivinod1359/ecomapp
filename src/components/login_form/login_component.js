@@ -8,7 +8,7 @@ const LoginComponent = () => {
     
     const onChangeEventHandler = (fieldId, value) => {
         // const a = null;
-        //console.log()
+        console.log("Here")
         try {
             login.forEach((item) => {
                 if (item.fieldId === fieldId) {

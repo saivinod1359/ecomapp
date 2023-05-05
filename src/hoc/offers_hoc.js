@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Card, CardTitle, CardText, CardBody, CardSubtitle, Button } from "reactstrap";
 import { calcPercentage } from "../untils/percentage";
+import { ShoppingCart } from "../context/shopping_cart";
 
 const Offers = (MyComponent_1, MyComponent_2, MyComponent_3) => {
     const [products, setProducts] = useState([]);
-    const [cart, setCart] = useState([]);
+    // const [cart, setCart] = useState([]);
+    const [cart, setCart] = useContext(ShoppingCart);
 
     useEffect(() => {
         fetch("./responses/offers.json")
@@ -52,7 +54,7 @@ const Offers = (MyComponent_1, MyComponent_2, MyComponent_3) => {
 
                     return <Card
                         style={{
-                            width: '18rem',
+                            width: '14rem',
                             marginLeft: '5px',
                             marginTop: '5px'
                         }}
@@ -74,6 +76,9 @@ const Offers = (MyComponent_1, MyComponent_2, MyComponent_3) => {
                             </CardText>
                             <Button onClick={() => addToCart(item)}>
                                 Add To Cart
+                            </Button> &nbsp;
+                            <Button>
+                                Details
                             </Button>
                         </CardBody>
                     </Card>

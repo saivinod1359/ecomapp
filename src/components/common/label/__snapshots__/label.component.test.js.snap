@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check Props for lable component shallow render label component 1`] = `ShallowWrapper {}`;
+
+exports[`Check Props shallow render label component 1`] = `ShallowWrapper {}`;
+
+exports[`Simple label Component Shallow render check shallow render label component 1`] = `ShallowWrapper {}`;

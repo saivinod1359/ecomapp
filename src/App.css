@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+}
+
+.active {
+    color: red
+}
+
+.noList {
+    list-style-type: none;
+    margin-top:50px;
+    padding: 0;
+    width: 300px;
+}
+.noList li {
+    margin: 5px 0;
+    background-color: #cfcfcf;
+    padding: 10px;
+}
+
+.noList li a {
+    text-decoration: none;
+}
+
+.cart_content {
+    padding: 10px;
+}
+
+/* Loading Text animation */
+h1 {
+    position: relative;
+    color: rgba(0, 0, 0, .3);
+    font-size: 5em
+}
+h1:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    max-width: 7em;
+    white-space: nowrap;
+    color:chocolate;
+    animation: loading 8s linear;
+}
+@keyframes loading {
+    0% {
+        max-width: 0;
+    }
+}
